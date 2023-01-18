@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather forecast</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+        </div>
+       <div class="content">
+           <h2 class="heading">Weather forecast</h2>
+           <input type="text" id="city-input" placeholder="Search city here">
+           <br> 
+           <input type="button" value="search" onclick="searchCity()">
+            <br>
+        </div>
+        <div class="result">
+            <h2 id="city-name">Place</h2>
+            <div>
+                <h1 id="weather-type">Climate</h1>
+                <div>
+                    <h3>Temp:<span id="temp"></span><span>&degF</span></h3>
+                    <h3>Min.Temp:<span id="min-temp"></span><span>&degF</span></h3>
+                    <h3>Max.Temp:<span id="max-temp"></span><span>&degF</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
